@@ -117,6 +117,10 @@ const ARApp = (props) => {
 
     // when videofeed is got, init WebAR.rocks.object through the threeHelper:
     const onCameraVideoFeedGot = () => {
+      if (!cameraVideoRef.current || !canvasComputeRef.current) {
+        console.error("Refs not ready");
+        return;
+      }
       threeHelper.init({
         video: cameraVideoRef.current,
         ARCanvas: canvasComputeRef.current,

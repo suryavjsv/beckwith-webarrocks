@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react'
-import { Edges } from '@react-three/drei'
-
+import { useFrame } from '@react-three/fiber';
 
 // This mesh follows the object. put stuffs in it.
 // Its position and orientation is controlled by the THREE.js helper
