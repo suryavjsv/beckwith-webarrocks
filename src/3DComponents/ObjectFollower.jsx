@@ -14,6 +14,10 @@ const ObjectFollower = ({ label, threeHelper, isInitialized, children }) => {
       return;
 
     const pose = threeHelper.get_pose(label);
+
+    if (pose) {
+      console.log("Pose detected:", pose);
+    }
     if (pose && ref.current) {
       ref.current.matrix.fromArray(pose);
       ref.current.matrix.decompose(
