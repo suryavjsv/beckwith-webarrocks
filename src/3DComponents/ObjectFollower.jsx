@@ -17,6 +17,8 @@ const ObjectFollower = ({ label, threeHelper, isInitialized, children }) => {
 
     if (pose) {
       console.log("Pose detected:", pose);
+    } else {
+      console.log("pose not detected");
     }
     if (pose && ref.current) {
       ref.current.matrix.fromArray(pose);

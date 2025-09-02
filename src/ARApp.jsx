@@ -9,7 +9,7 @@ import threeHelper from './contrib/WebARRocksObject/helpers/WebARRocksObjectThre
 // import mediaStream API helper:
 import mediaStreamAPIHelper from "./contrib/WebARRocksObject/helpers/WebARRocksMediaStreamAPIHelper.js";
 
-// import neural network model:
+//import neural network model:
 
 // Neural Network directly trained from WebAR.rocks.train/trainingScripts/Object3DLighter_0.js :
 import NN from "./assets/neuralNets/beckwith_1-7L_2025-09-02.json";
