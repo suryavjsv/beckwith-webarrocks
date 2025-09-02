@@ -11,7 +11,7 @@ import mediaStreamAPIHelper from './contrib/WebARRocksObject/helpers/WebARRocksM
 // import neural network model:
 
 // Neural Network directly trained from WebAR.rocks.train/trainingScripts/Object3DLighter_0.js :
-import NN from './assets/neuralNets/BeckWith1L_2025-09-02.json'
+import NN from './assets/neuralNets/BeckWith1_4L_2025-09-02.json'
 // Neural Network compressed by WebAR.rocks (contact-us for more information):
 //import NN from './assets/neuralNets/NN_LIGHTER_5.json'
 
