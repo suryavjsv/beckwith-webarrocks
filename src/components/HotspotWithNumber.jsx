@@ -11,7 +11,7 @@ const HotspotWithNumber = ({ position, number }) => {
 <Text
        position={[0, 0, 0.01]} // slightly above the circle
        fontSize={0.15}
-       color="white"
+       color="black"
        anchorX="center"
        anchorY="middle"
 >
