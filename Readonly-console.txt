@@ -1,0 +1,408 @@
+Welcome to WebAR.rocks.train v1.0.0Integrated Training Environment
+Copyright (c) 2020 WebAR.rocks
+  ██╗    ██╗███████╗██████╗  █████╗ ██████╗             ██║    ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗            ██║ █╗ ██║█████╗  ██████╔╝███████║██████╔╝            ██║███╗██║██╔══╝  ██╔══██╗██╔══██║██╔══██╗            ╚███╔███╔╝███████╗██████╔╝██║  ██║██║  ██║             ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝                       ██████╗  ██████╗  ██████╗██╗  ██╗███████╗             ██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝██╔════╝             ██████╔╝██║   ██║██║     █████╔╝ ███████╗             ██╔══██╗██║   ██║██║     ██╔═██╗ ╚════██║          ██╗██║  ██║╚██████╔╝╚██████╗██║  ██╗███████║          ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝
+Shaders.js - init: init shader  shp_debugUV
+Shaders.js - init: init shader  shp_copy
+Shaders.js - init: init shader  shp_copyMask
+Shaders.js - init: init shader  shp_copyMaskScale
+Shaders.js - init: init shader  copyInvy
+Shaders.js - init: init shader  copyInvx
+Shaders.js - init: init shader  shp_copyChannels
+Shaders.js - init: init shader  shp_copyChannelsScaled
+Shaders.js - init: init shader  shp_copyScale
+Shaders.js - init: init shader  shp_copyScaleOffset4
+Shaders.js - init: init shader  shp_copyRGBGrey
+Shaders.js - init: init shader  shp_displayChannel
+Shaders.js - init: init shader  shp_displayColored
+Shaders.js - init: init shader  shp_floatChannel
+Shaders.js - init: init shader  shp_clampMask
+Shaders.js - init: init shader  shp_sigmoid
+Shaders.js - init: init shader  shp_relu
+Shaders.js - init: init shader  shp_elu
+Shaders.js - init: init shader  shp_elu01
+Shaders.js - init: init shader  shp_selu
+Shaders.js - init: init shader  shp_gelu
+Shaders.js - init: init shader  shp_arctan
+Shaders.js - init: init shader  shp_arctan2
+Shaders.js - init: init shader  shp_arctanNormalized
+Shaders.js - init: init shader  shp_softplus
+Shaders.js - init: init shader  shp_normalize
+Shaders.js - init: init shader  shp_weights
+Shaders.js - init: init shader  shp_weightsFull
+Shaders.js - init: init shader  shp_weightsConv
+Shaders.js - init: init shader  shp_weightsDirect
+Shaders.js - init: init shader  shp_bias
+Shaders.js - init: init shader  shp_imageTransformer
+Shaders.js - init: init shader  shp_batchCutSimple
+Shaders.js - init: init shader  shp_RG_BA_8To32
+Shaders.js - init: init shader  shp_bpCrossEntropy
+Shaders.js - init: init shader  shp_bpQuadratic
+Shaders.js - init: init shader  shp_bpCopy
+Shaders.js - init: init shader  shp_bpSigmoid
+Shaders.js - init: init shader  shp_bpRelu
+Shaders.js - init: init shader  shp_bpElu
+Shaders.js - init: init shader  shp_bpElu01
+Shaders.js - init: init shader  shp_bpSelu
+Shaders.js - init: init shader  shp_bpGelu
+Shaders.js - init: init shader  shp_bpArctan
+Shaders.js - init: init shader  shp_bpArctan2
+Shaders.js - init: init shader  shp_bpArctanNormalized
+Shaders.js - init: init shader  shp_bpSoftplus
+Shaders.js - init: init shader  shp_bpWeightsDeltas
+Shaders.js - init: init shader  shp_bpWeightsDeltasFull
+Shaders.js - init: init shader  shp_bpWeightsDeltasConv
+Shaders.js - init: init shader  shp_bpWeightsDeltasDirect
+Shaders.js - init: init shader  shp_learning_computeDWeight
+Shaders.js - init: init shader  shp_learning_computeDWeightDirect
+Shaders.js - init: init shader  shp_learning_computeDWeightFull
+Shaders.js - init: init shader  shp_learning_addMomentum
+Shaders.js - init: init shader  shp_learning_applyDWeight
+Shaders.js - init: init shader  shp_learning_computeDBias
+Shaders.js - init: init shader  shp_reorganize
+Shaders.js - init: init shader  shp_shiftRGBA1
+Shaders.js - init: init shader  shp_shiftRGBA2
+Shaders.js - init: init shader  shp_add
+Shaders.js - init: init shader  shp_diff
+Shaders.js - init: init shader  shp_diffAbs
+Shaders.js - init: init shader  shp_mult
+Shaders.js - init: init shader  shp_square
+Shaders.js - init: init shader  shp_grayScale
+Shaders.js - init: init shader  shp_grayScaleTilt
+Shaders.js - init: init shader  shp_rgbGrayTilt
+Shaders.js - init: init shader  shp_rgbDiffGrayTilt
+Shaders.js - init: init shader  shp_sobel
+Shaders.js - init: init shader  shp_meanNormalization
+Shaders.js - init: init shader  shp_maxPooling2
+Shaders.js - init: init shader  shp_maxPooling4
+Shaders.js - init: init shader  shp_maxPooling2Mask
+Shaders.js - init: init shader  shp_maxPooling4Mask
+Shaders.js - init: init shader  shp_inputLightRegBlur
+Shaders.js - init: init shader  shp_inputLightRegCompose
+Shaders.js - init: init shader  shp_ARcutArea
+INFO in Trainer.js: start loading...
+INFO in NeuronNetwork - build_layers(): make layers from scratch
+INFO in NeuronNetwork - build_layers(): build layer  0 ...
+INFO in Shaders.js - add_shader() - id = shp_inputMix0GreyScale
+INFO in Shaders.js - add_shader() - id = shp_inputMix0Blur
+INFO in Shaders.js - add_shader() - id = shp_inputMix0Compose
+INFO in NeuronNetwork - build_layers(): layer  0  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  1 ...
+DEBUG in ConnectivityConv - instance: spec = {"kernelsCount":4,"layerIndex":1,"inputScale":[1,1],"fromLayerSize":128,"toLayerSize":128,"toSparsity":8,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - build_layers(): layer  1  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  2 ...
+DEBUG in ConnectivityConv - instance: spec = {"kernelsCount":4,"layerIndex":2,"inputScale":[1,1],"fromLayerSize":128,"toLayerSize":32,"toSparsity":16,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - build_layers(): layer  2  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  3 ...
+DEBUG in ConnectivityFull - instance: spec =  {"backup":null,"layerIndex":3,"fromLayerSize":32,"toLayerSize":16,"toSparsity":32,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - build_layers(): layer  3  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  4 ...
+DEBUG in ConnectivityFull - instance: spec =  {"backup":null,"layerIndex":4,"fromLayerSize":16,"toLayerSize":16,"toSparsity":16,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - build_layers(): layer  4  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  5 ...
+DEBUG in ConnectivityFull - instance: spec =  {"backup":null,"layerIndex":5,"fromLayerSize":16,"toLayerSize":16,"toSparsity":16,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - build_layers(): layer  5  built successfully
+INFO in NeuronNetwork - build_layers(): build layer  6 ...
+DEBUG in ConnectivityFull - instance: spec =  {"backup":null,"layerIndex":6,"fromLayerSize":16,"toLayerSize":8,"toSparsity":16,"initToZero":false,"stride":1}
+INFO in NeuronNetwork - layer_isLoaded(): All layers are loaded. This is cool.
+INFO in NeuronNetwork - build_layers(): layer  6  built successfully
+INFO in NeuronNetwork - build_layers(): All layers have been built successfully
+INFO in Trainer.js - check_isLoaded():  1 / 2
+INFO in ObjectDetectionTrainer.init(): computed outputWidth = 8
+INFO in ObjectDetectionTrainer: build_envMaps()...
+INFO in Trainer.js - start()
+INFO in NeuronLayer.js - setup_output() launched
+INFO: Screen wake locked
+ADD ENVMAP ON MATERIAL 
+ADD ENVMAP ON MATERIAL Material.005
+ADD ENVMAP ON MATERIAL front texture
+INFO in ObjectDetectionTrainer - init():  trainingData/models3D/Beckwith_merged.glb loaded
+INFO in ObjectDetectionTrainer: _three.loadingManager has loaded everything
+INFO in ObjectDetectionTrainer.js - init(): all stuffs are loaded
+INFO in ObjectDetectionTrainer.js - on_load(): Average height for beckWith  =  0.48559196293354034
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_0
+INFO in Shaders.js - add_shader() - id = shp_elasticDistortionCombine
+INFO in Shaders.js - add_shader() - id = shp_elasticDistortionDisplace
+INFO in Shaders.js - add_shader() - id = shp_blurInput
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_1
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_2
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_3
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_4
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_5
+INFO in Shaders.js - add_shader() - id = shp_shaderPass_6
+INFO in Shaders.js - add_shader() - id = shp_blurInput
+INFO in Trainer.js - check_isLoaded():  2 / 2
+INFO in Trainer.js - check_isLoaded: all input and expected output textures are loaded
+INFO in Trainer.js - start()
+DEBUG in UI: Selected texture res = 128 x 128
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+INFO in Trainer.js: RESUME
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: PAUSED
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+X48 INFO: NN detects  NONE instead of beckWith
+X71 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: PAUSED
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+X35 INFO: NN detects  beckWith instead of NONE
+X49 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X24 INFO: NN detects  NONE instead of beckWith
+X52 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X30 INFO: NN detects  NONE instead of beckWith
+X42 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X24 INFO: NN detects  NONE instead of beckWith
+X37 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X26 INFO: NN detects  beckWith instead of NONE
+X40 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X14 INFO: NN detects  NONE instead of beckWith
+X39 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X26 INFO: NN detects  NONE instead of beckWith
+X47 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+X30 INFO: NN detects  beckWith instead of NONE
+X37 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+X23 INFO: NN detects  beckWith instead of NONE
+X42 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+X10 INFO: NN detects  NONE instead of beckWith
+X69 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X26 INFO: NN detects  beckWith instead of NONE
+X51 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X13 INFO: NN detects  beckWith instead of NONE
+X51 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X19 INFO: NN detects  beckWith instead of NONE
+X44 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+X25 INFO: NN detects  beckWith instead of NONE
+X35 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X10 INFO: NN detects  beckWith instead of NONE
+X61 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X23 INFO: NN detects  NONE instead of beckWith
+X38 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+X16 INFO: NN detects  beckWith instead of NONE
+X28 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X28 INFO: NN detects  NONE instead of beckWith
+X38 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X29 INFO: NN detects  NONE instead of beckWith
+X30 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X21 INFO: NN detects  beckWith instead of NONE
+X40 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X29 INFO: NN detects  NONE instead of beckWith
+X30 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X27 INFO: NN detects  beckWith instead of NONE
+X45 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X20 INFO: NN detects  NONE instead of beckWith
+X31 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+DEBUG in UI: Selected texture res = 128 x 128
+DEBUG in UI: Selected texture res = 8 x 8
+DEBUG in UI: Selected texture res = 8 x 8
+DEBUG in UI: Selected texture res = 8 x 8
+DEBUG in UI: Selected texture res = 128 x 128
+DEBUG in UI: Selected texture res = 128 x 128
+DEBUG in UI: Selected texture res = 128 x 128
+X21 INFO: NN detects  NONE instead of beckWith
+X32 INFO: NN detects  beckWith instead of NONE
+INFO in Trainer - perform_test():  5000 trials have been considered
+X20 INFO: NN detects  beckWith instead of NONE
+X24 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X23 INFO: NN detects  beckWith instead of NONE
+X28 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+X11 INFO: NN detects  beckWith instead of NONE
+X47 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X12 INFO: NN detects  beckWith instead of NONE
+X26 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X25 INFO: NN detects  beckWith instead of NONE
+X37 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+X28 INFO: NN detects  beckWith instead of NONE
+X31 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
+INFO in Trainer.js: PAUSED
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+WARNING in Texture.js - export_toJSON(): we need to resize the canvas to export a float texture
+INFO in UICode.JS - save: Pack neuron network to a JSON string
+DEBUG in lib_ajax.download: store download data into window.debugLastDownloadData
+WARNING: The wake lock has been released
+INFO: Screen wake locked
+INFO in Trainer.js: RESUME
+X17 INFO: NN detects  beckWith instead of NONE
+X46 INFO: NN detects  NONE instead of beckWith
+INFO in Trainer - perform_test():  5000 trials have been considered
