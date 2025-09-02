@@ -1,5 +1,4 @@
-import guidelineImage from '../assets/images/beckwith.png'
-
+import guidelineImage from '../assets/images/beckwith.webp'
 
 const Guideline = (props) => {
   return (
