@@ -8,7 +8,7 @@ const Guideline = (props) => {
       <div className='guideLineContent'>
         <img src={guidelineImage} className='guideLineImage'/>
         <div className='guideLineText'>
-        Please show a simple lighter.<br/>Do not hide it partially with your hand.<br/>Magic will happen 🪄.
+        Please show a BeckWith Model.<br/>Do not hide it partially with your hand.<br/>Magic will happen 🪄.
         </div>
         <button className='guideLineCloseButton' onClick={props.onClose}>Hide instructions</button>
       </div>
