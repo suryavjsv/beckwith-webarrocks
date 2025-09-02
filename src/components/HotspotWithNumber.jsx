@@ -1,16 +1,17 @@
-import { Circle, Text } from "@react-three/drei";
+import { Text } from "@react-three/drei";
 const HotspotWithNumber = ({ position, number }) => {
  return (
 <group position={position}>
-     {/* Yellow 2D circle */}
-<Circle args={[0.1, 32]} rotation={[-Math.PI / 2, 0, 0]}>
-<meshStandardMaterial color="yellow" />
-</Circle>
+     {/* Yellow circle */}
+<mesh rotation={[0, 0, 0]}> {/* flat, no upside-down rotation */}
+<circleGeometry args={[0.1, 32]} />
+<meshBasicMaterial color="yellow" /> {/* always visible */}
+</mesh>
      {/* Number inside */}
 <Text
-       position={[0, 0.01, 0]} // slightly above circle
+       position={[0, 0, 0.01]} // slightly above the circle
        fontSize={0.15}
-       color="black"
+       color="white"
        anchorX="center"
        anchorY="middle"
 >
