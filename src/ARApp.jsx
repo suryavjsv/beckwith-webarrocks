@@ -4,7 +4,7 @@ import isMobile from "is-mobile";
 import Hotspot from "./components/Hotspot.jsx"; // Adjust path as needed
 
 // import main helper:
-import threeHelper from "./contrib/WebARRocksObject/helpers/WebARRocksObjectThreeHelper.js";
+import threeHelper from './contrib/WebARRocksObject/helpers/WebARRocksObjectThreeHelper.js';
 
 // import mediaStream API helper:
 import mediaStreamAPIHelper from "./contrib/WebARRocksObject/helpers/WebARRocksMediaStreamAPIHelper.js";

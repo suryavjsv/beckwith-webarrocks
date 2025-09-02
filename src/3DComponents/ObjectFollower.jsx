@@ -1,31 +1,35 @@
-import { useRef, useEffect } from 'react'
-import { useFrame } from '@react-three/fiber';
+import { useRef, useEffect } from "react";
+import { useFrame } from "@react-three/fiber";
 
 // This mesh follows the object. put stuffs in it.
 // Its position and orientation is controlled by the THREE.js helper
 const ObjectFollower = ({ label, threeHelper, isInitialized, children }) => {
   const ref = useRef();
-
   useFrame(() => {
-    if (!isInitialized || !threeHelper) return;
+    if (
+      !isInitialized ||
+      !threeHelper ||
+      typeof threeHelper.get_pose !== "function"
+    )
+      return;
+
     const pose = threeHelper.get_pose(label);
-    if (pose) {
+    if (pose && ref.current) {
       ref.current.matrix.fromArray(pose);
-      ref.current.matrix.decompose(ref.current.position, ref.current.quaternion, ref.current.scale);
+      ref.current.matrix.decompose(
+        ref.current.position,
+        ref.current.quaternion,
+        ref.current.scale
+      );
     }
   });
-
-  return (
-    <group ref={ref}>
-      {children}
-    </group>
-  );
+  return <group ref={ref}>{children}</group>;
 };
-export default ObjectFollower 
+export default ObjectFollower;
 
 // const ObjectFollower = (props) => {
 //   const objRef = useRef()
-  
+
 //   useEffect(() => {
 //     const threeObject3D = objRef.current
 //     props.threeHelper.set_objectFollower(props.label, threeObject3D)
@@ -55,7 +59,4 @@ export default ObjectFollower
 //     </object3D>
 //   )
 // }
-//export default ObjectFollower 
-
-
-
+//export default ObjectFollower
