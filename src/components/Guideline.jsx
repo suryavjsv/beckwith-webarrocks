@@ -1,4 +1,4 @@
-import guidelineImage from '../assets/images/guideline_lighter.webp'
+import guidelineImage from '../assets/images/beckwith.png'
 
 
 const Guideline = (props) => {
